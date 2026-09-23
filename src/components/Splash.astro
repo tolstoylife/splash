@@ -16,6 +16,22 @@ import tLogo from '../assets/TolstoyTwhite.png';
 			<h1>
 				The life and works of Leo Tolstoy. Coming 2028.
 			</h1>
+			<p class="lede">Open research, done in the open while it is being made.</p>
+			<section class="block">
+				<h2>Read and listen now</h2>
+				<p><a href="https://research.tolstoy.life/reader/non-fiction/personal-papers/confession/">A Confession</a> (1879–82): his account of his own crisis, in Leo Wiener's 1904 English, with read-along audio.</p>
+				<p><a href="https://research.tolstoy.life/reader/non-fiction/essays-and-criticism/the-great-sin/">The Great Sin</a> (1905): on land and property, in the English of its own year (<em>A Great Iniquity</em>), with read-along audio.</p>
+			</section>
+			<section class="block">
+				<h2>Follow the research</h2>
+				<p><a href="https://research.tolstoy.life/">Every source dive, dossier and working note</a> behind the editions.</p>
+				<p>The pages, the notes and the code that builds them are all on GitHub: <a href="https://github.com/tolstoylife/">github.com/tolstoylife</a>.</p>
+			</section>
+			<section class="block">
+				<h2>Help</h2>
+				<p>Read or listen. When something is wrong or unclear, select it, write a note, and press <em>Send</em>. It reaches us with the passage attached.</p>
+			</section>
+			<p class="foot">Everything here is free to use: Tolstoy renounced the copyright to his work, and this project dedicates its own to the <a href="https://github.com/tolstoylife/tolstoy.life/blob/main/LICENSE">public domain</a> with a <a href="https://github.com/pjedlund/soli-deo-gloria-dedication">Soli Deo Gloria dedication</a>.</p>
 		</section>
 	</main>
 </div>
@@ -27,7 +43,7 @@ import tLogo from '../assets/TolstoyTwhite.png';
 
 	#container {
 		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-		height: 100vh;
+		min-height: 100vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -50,7 +66,14 @@ import tLogo from '../assets/TolstoyTwhite.png';
 	}
 
 	h1 {
-		font-size: 22px;
+		font-size: 24px;
 		margin-top: 1.25em;
 	}
+	#hero > :not(img) { width: 100%; max-width: 34rem; }
+	.lede { color: #c9cbe0; margin-top: .4rem; font-size: 18px; line-height: 1.6; }
+	.block { margin-top: 1.6rem; }
+	.block h2 { font-size: 16px; letter-spacing: .04em; text-transform: uppercase; color: #8d92b5; margin-bottom: .3rem; }
+	.block p { margin: .4rem 0; color: #e7e8f2; font-size: 17px; line-height: 1.7; }
+	a { color: #f0d9a8; }
+	.foot { margin-top: 2rem; color: #8d92b5; font-size: 15px; line-height: 1.6; }
 </style>

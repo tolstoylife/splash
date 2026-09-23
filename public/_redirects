@@ -1,0 +1,2 @@
+/docs    https://research.tolstoy.life/        301
+/docs/*  https://research.tolstoy.life/:splat  301
